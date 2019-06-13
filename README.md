@@ -4,6 +4,14 @@ RuffusValidator is a project written in the C # language to facilitate the valid
 Its deployment is easily possible on desktop projects like WindowsForms or WPF, plus some web application layer scenarios
 
 ```C#
+    public class Cliente //Model Class
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public decimal Idade { get; set; }
+        public string Apelido { get; set; }
+    }
+    
     public class ValidaNomeESobrenome : ISpecificValidator
     {   /*
           When we need to apply
