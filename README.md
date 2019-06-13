@@ -5,7 +5,16 @@ Its deployment is easily possible on desktop projects like WindowsForms or WPF, 
 
 ```C#
     public class ValidaNomeESobrenome : ISpecificValidator
-    {
+    {   /*
+          When we need to apply
+          more complex validation rules,
+          we can create a class that implements
+          the ISpecificValidator interface that contains the
+          bool method IsValid (object value), where
+          parameter "value" is the value coming from
+          of the class in which it is registered
+          no ValidationDomain
+         * */
         public bool IsValid(object value)
         {
             if (value.ToString().Split(' ').Length == 1)
