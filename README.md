@@ -1,5 +1,5 @@
 # RuffusValidator
-RuffusValidator is a project written in the C # language to facilitate the validation of model classes in projects projects where they normally do not support or are not implemented using DataAnnotations or FluentValidations
+RuffusValidator is a project written in the C # language to facilitate the validation of model classes in projects where they normally do not support or are not implemented using DataAnnotations or FluentValidations
 
 Its deployment is easily possible on desktop projects like WindowsForms or WPF, plus some web application layer scenarios
 
