@@ -21,6 +21,11 @@ namespace RuffusValidator
         public string Apelido { get; set; }
     }
 
+    public class OutraClasse
+    {
+        public string Nome { get; set; }
+    }
+
     class Program
     {
         static void Setup()
@@ -42,13 +47,13 @@ namespace RuffusValidator
             {
                 Cliente c = new Cliente();
                 c.Id = 9;
-                c.Nome = "Naipe nove";
+                c.Nome = "";
                 Ruffus r = new Ruffus();
                 r.Valid(c);
 
                 Console.WriteLine("Cliente válido");
             }
-            catch (Exception ex)
+            catch (RuffusValidationException ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(ex.Message);

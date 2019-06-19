@@ -44,10 +44,19 @@
   <ItemGroup>
     <Compile Include="CoreValidator.cs" />
     <Compile Include="ISpecificValidator.cs" />
+    <Compile Include="IValidator.cs" />
+    <Compile Include="MaxLengthValidator.cs" />
+    <Compile Include="MaxValueValidator.cs" />
+    <Compile Include="MinLengthValidator.cs" />
+    <Compile Include="MinValueValidator.cs" />
+    <Compile Include="NotEmptyValidator.cs" />
+    <Compile Include="NotNullValidation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ruffus.cs" />
+    <Compile Include="RuffusValidationException.cs" />
     <Compile Include="ValidationDomain.cs" />
+    <Compile Include="ValidationEngine.cs" />
     <Compile Include="ValidationRule.cs" />
     <Compile Include="ValidationRuleType.cs" />
   </ItemGroup>

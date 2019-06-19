@@ -13,6 +13,13 @@ namespace RuffusValidator
         public object BaseCompareValue { get; private set; }
         public string Message { get; private set; }
 
+        internal object Entity { get; private set; }
+
+        internal void SetEntity(object entity)
+        {
+            Entity = entity;
+        }
+
         public ValidationRule(ValidationRuleType type, string property,
             string message, object baseCompareValue = null)
         {

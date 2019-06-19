@@ -7,10 +7,10 @@ namespace RuffusValidator
 {
     public class CoreValidator
     {
-        public static List<ValidationDomain> Domains { get; private set; }
+        private static List<ValidationDomain> Domains { get; set; }
         private static object locker = new object();
 
-        public ValidationDomain GetDomainByEntityType(Type type)
+        internal ValidationDomain GetDomainByEntityType(Type type)
         {
             lock(locker)
             {
