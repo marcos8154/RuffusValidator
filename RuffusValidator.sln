@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuffusValidator", "RuffusValidator\RuffusValidator.csproj", "{544772A9-B665-4893-9E2D-4594D204DBB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuffusValidator.Standard", "RuffusValidator.Standard\RuffusValidator.Standard.csproj", "{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{DA46B10C-9ABD-4B14-8A72-D46D0FF935CD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\icon.png = ..\..\..\..\Downloads\icon.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +22,15 @@ Global
 		{544772A9-B665-4893-9E2D-4594D204DBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{544772A9-B665-4893-9E2D-4594D204DBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{544772A9-B665-4893-9E2D-4594D204DBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57470331-E0D8-427B-B55A-629996E3E344}
 	EndGlobalSection
 EndGlobal
