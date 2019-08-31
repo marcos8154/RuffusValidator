@@ -42,7 +42,7 @@ namespace RuffusValidator
             if (rule.Validator != null)
             {
                 ISpecificValidator validator = (ISpecificValidator)Activator.CreateInstance(rule.Validator);
-                bool valid = validator.IsValid(rule);
+                bool valid = validator.IsValid(value);
                 if (!valid)
                     throw new RuffusValidationException(rule.Message);
             }

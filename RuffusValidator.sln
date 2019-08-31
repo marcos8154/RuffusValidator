@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuffusValidator", "RuffusVa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuffusValidator.Standard", "RuffusValidator.Standard\RuffusValidator.Standard.csproj", "{E6CEEE09-C1C3-459D-880A-A39A4F4215EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{DA46B10C-9ABD-4B14-8A72-D46D0FF935CD}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Downloads\icon.png = ..\..\..\..\Downloads\icon.png
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

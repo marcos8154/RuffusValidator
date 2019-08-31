@@ -36,8 +36,7 @@ namespace RuffusValidator
                 .NotEmpty("Nome", "O nome do cliente é obrigatório")
                 //     .MinLength("Nome", "O nome do cliente deve ter no minimo 5 caracteres", 5)
                 .Min("Id", "A id deve ser no minimo 8", 8)
-                .Max("Id", "A id deve ser no maximo 10", 10)
-                .EspecificMethod("Nome", typeof(ValidaNomeESobrenome), "Nome e sobre nome é obrigatório"));
+                .Max("Id", "A id deve ser no maximo 10", 10));
         }
         public static void Main(string[] args)
         {
@@ -46,8 +45,8 @@ namespace RuffusValidator
             try
             {
                 Cliente c = new Cliente();
-                c.Id = 9;
-                c.Nome = "";
+                c.Id = 11;
+                c.Nome = "dsadasdadad";
                 Ruffus r = new Ruffus();
                 r.Valid(c);
 

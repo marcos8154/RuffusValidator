@@ -28,9 +28,9 @@ namespace RuffusValidator.Standard
 
             if (rule.RuleType == ValidationRuleType.MAX_LENGTH)
             {
-                string minStr = value.ToString();
-                int minStrCompare = int.Parse(rule.BaseCompareValue.ToString());
-                if (minStr.Length < minStrCompare)
+                string str = value.ToString();
+                int maxStrCompare = int.Parse(rule.BaseCompareValue.ToString());
+                if (str.Length > maxStrCompare)
                     throw new RuffusValidationException(property.Name, rule.Message);
             }
             else if (rule.RuleType == ValidationRuleType.ESPECIFIC_METHOD)
@@ -42,7 +42,7 @@ namespace RuffusValidator.Standard
             if (rule.Validator != null)
             {
                 ISpecificValidator validator = (ISpecificValidator)Activator.CreateInstance(rule.Validator);
-                bool valid = validator.IsValid(rule);
+                bool valid = validator.IsValid(value);
                 if (!valid)
                     throw new RuffusValidationException(rule.Message);
             }

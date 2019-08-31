@@ -28,10 +28,9 @@ namespace RuffusValidator.Standard
         {
             if (rule.RuleType == ValidationRuleType.MIN)
             {
-                object value = property.GetValue(rule.Entity, null);
-                decimal min = decimal.Parse(value.ToString());
+                decimal value = decimal.Parse(property.GetValue(rule.Entity, null).ToString());
                 decimal minCompare = decimal.Parse(rule.BaseCompareValue.ToString());
-                if (min < minCompare)
+                if (value < minCompare)
                     throw new RuffusValidationException(property.Name, rule.Message);
             }
 

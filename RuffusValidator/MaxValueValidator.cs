@@ -25,12 +25,11 @@ namespace RuffusValidator
 
         public void Valid()
         {
-            if (rule.RuleType == ValidationRuleType.MIN)
+            if (rule.RuleType == ValidationRuleType.MAX)
             {
-                object value = property.GetValue(rule.Entity, null);
-                decimal min = decimal.Parse(value.ToString());
-                decimal minCompare = decimal.Parse(rule.BaseCompareValue.ToString());
-                if (min < minCompare)
+                decimal value = decimal.Parse(property.GetValue(rule.Entity, null).ToString());
+                decimal maxCompare = decimal.Parse(rule.BaseCompareValue.ToString());
+                if (value > maxCompare)
                     throw new RuffusValidationException(property.Name, rule.Message);
             }
 
